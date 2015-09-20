@@ -5,6 +5,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+import static java.util.Arrays.asList;
 import static org.junit.Assert.assertEquals;
 
 public class Stepdefs {
@@ -30,6 +31,6 @@ public class Stepdefs {
 
     @Then("^Lucy should hear Sean's message$")
     public void lucy_should_hear_Sean_s_message() throws Throwable {
-        assertEquals(messageFromSean, lucy.getMessagesHeard());
+        assertEquals(asList(messageFromSean), lucy.getMessagesHeard());
     }
 }

@@ -1,8 +1,10 @@
 package shouty;
 
+import java.util.List;
+
 public class Person {
     private int position;
-    private String messagesHeard;
+    private List<String> messagesHeard;
 
     public void setPosition(int position) {
         this.position = position;
@@ -11,7 +13,7 @@ public class Person {
     public void shouts(String message) {
     }
 
-    public String getMessagesHeard() {
+    public List<String> getMessagesHeard() {
         return messagesHeard;
     }
 }
